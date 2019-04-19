@@ -34,6 +34,3 @@ public class TennisGame {
     }
 }
 
-enum Player {
-    ONE, TWO
-}

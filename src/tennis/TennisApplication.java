@@ -22,7 +22,7 @@ public class TennisApplication {
 
                 String score = game.getScore();
                 System.out.println("Score: " + score);
-                if (score.toLowerCase().contains("wins!")) {
+                if (score.toLowerCase().contains("wins")) {
                     break;
                 }
             } catch (InvalidParameterException e) {
