@@ -11,7 +11,7 @@ class TennisGameTest {
 
     @Test
     @DisplayName("when p1 scores, returns {Fifteen, Love}")
-    void P1_scores__shouldReturn_() {
+    void P1Scores() {
         assertTrue(false);
     }
 }
