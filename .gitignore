@@ -1,4 +1,5 @@
 .idea/
 TennisKata.iml
 out/
+target/
 *.iml
