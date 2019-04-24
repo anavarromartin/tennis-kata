@@ -3,6 +3,7 @@ package tennis;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 /*
@@ -26,8 +27,11 @@ import static org.junit.jupiter.api.Assertions.fail;
 class TennisGameTest {
 
     @Test
-    @DisplayName("when p1 scores, returns {Fifteen, Love}")
-    void P1Scores() {
-        fail();
+    @DisplayName("when P1 scores, the score is: Fifteen - Love")
+    void p1Scores() {
+        TennisGame game = new TennisGame();
+        game.wonPoint(Player.ONE);
+
+        assertEquals("Fifteen - Love", game.getScore());
     }
 }
